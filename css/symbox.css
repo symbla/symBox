@@ -27,7 +27,6 @@ DAMAGE.
 */
 
 /* IMPORT SYSTEM STYLES */
-	@import url("./sys/animate.css");
 	@import url("./sys/config.css");
 	@import url("./sys/colors.css");
 	@import url("./sys/keyframes.css");
@@ -39,6 +38,7 @@ DAMAGE.
 	@import url("./components/panels.css");
 	@import url("./components/paralax.css");
 	@import url("./components/tables.css");
+	@import url("./components/tabs.css");
 	@import url("./components/typography.css");
 	@import url("./components/windows.css");
 

@@ -51,3 +51,22 @@
 			background: #EEE;
 		}
 	}
+		
+	
+/* TabItemHover */
+	
+	@keyframes TabItemHover {
+		from {}
+		to {
+			background: #AAA;
+			color: #000;
+		}
+	}
+	
+	@-webkit-keyframes TabItemHover {
+		from {}
+		to {
+			background: #AAA;
+			color: #000;
+		}
+	}
