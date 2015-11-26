@@ -16,7 +16,7 @@ a.tab-item {
 
 a.tab-item:hover {
 	animation: TabItemHover 500ms ease-in-out;
-	/*animation-fill-mode: forwards;*/
+	animation-fill-mode: forwards;
 }
 
 a.tab-item:target {
