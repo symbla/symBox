@@ -29,7 +29,7 @@ DAMAGE.
 /* IMPORT SYSTEM STYLES */
 	@import url("./sys/config.css");
 	@import url("./sys/colors.css");
-	@import url("./sys/keyframes.css");
+	@import url("./sys/fonts.css");
 
 /* IMPORT COMPONENTS */
 	@import url("./components/forms.css");
@@ -43,7 +43,7 @@ DAMAGE.
 	@import url("./components/windows.css");
 
 body {
-	font-family: "Arial", Gadget, sans-serif;
+	font-family: "OPENSANS";
 	margin: 0;
 	padding: 0;
 }
