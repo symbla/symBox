@@ -1,0 +1,12 @@
+/**
+*
+* FONT FACE DEFINITIONS
+*
+**/
+
+@font-face {
+    font-family: "OPENSANS";
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
