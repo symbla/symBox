@@ -9,39 +9,49 @@
  
 /* CLASSES FOR BUTTONS */
 	[class*='btn-'] {
-		border: 1px solid #CCC;
+		cursor: pointer;
+		border: none;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		color: #9A9A9A;
 		padding: 7px 10px;
 		text-align: center;
 		text-transform: uppercase;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
-		box-shadow: 0 0 5px #CCC;
+		transition: all 300ms linear;
+		-moz-transition: all 300ms linear;
+		-webkit-transition: all 300ms linear;
 	}
 	[class*='btn-']:hover {
-		animation: ButtonHover 1s;
-		animation-fill-mode: forwards;
+		color: #333;
 	}
 	
 	/* BUTTON TYPES */
-		.btn-ok { background: #0088FF; }
-		.btn-default { background: #FFF; }
-		.btn-success { background: #CCFF99; }
-		.btn-cancel { background: #FF9966; }
+		.btn-ok { border-bottom-color: #3EB7FF; }
+		.btn-ok:hover { box-shadow: inset 0 -40px 0 #3EB7FF; }
+		.btn-default { border-bottom-color: #AAA; }
+		.btn-default:hover { box-shadow: inset 0 -50px 0 #AAA; }
+		.btn-success { border-bottom-color: #9be359; }
+		.btn-success:hover{ box-shadow: inset 0 -50px 0 #9be359; }
 		
 		
 /* CLASSES FOR TEXT FIELDS */
 	[class*='txt-'] {
-		content: "Textfeld";
 		border: none;
-		border-bottom: 1px solid #CCC;
+		border-bottom: 2px solid #DDD;
 		padding: 4px 10px;
 		width: 200px;
+		transition: all 250ms linear;
+		-moz-transition: all 250ms linear;
+		-webkit-transition: all 250ms linear;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
 	} 
 	[class*='txt-']:focus {
-		content: "";
-		animation: TextFocus 1s;
-		animation-fill-mode: forwards;
+		box-shadow: inset 0 -30px 0 #DDD;
 	}
 	
 	/* TEXT TYPES */
