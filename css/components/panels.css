@@ -20,13 +20,16 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	display: block;
-	padding: 3px 5px;
+	padding: 3px 10px;
+	background: #F5F5F5;
+	overflow: hidden;
+	border-bottom: 1px solid #E5E5E5;
 }
 
 .panel-body {
 	display: block;
 	width: auto;
-	padding: 5px;
+	padding: 10px 5px;
 }
 
 /* TEXT PROPERTIES */
