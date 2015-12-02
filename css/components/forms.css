@@ -17,15 +17,20 @@
 		padding: 7px 10px;
 		text-align: center;
 		text-transform: uppercase;
+		
+		border-radius: 2px;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
-		border-radius: 2px;
+		
 		transition: all 300ms linear;
 		-moz-transition: all 300ms linear;
 		-webkit-transition: all 300ms linear;
 	}
 	[class*='btn-']:hover {
 		color: #333;
+	}
+	[class*='btn-']:active {
+		text-shadow: 0 0 5px #000;
 	}
 	
 	/* BUTTON TYPES */
@@ -35,24 +40,32 @@
 		.btn-default:hover { box-shadow: inset 0 -50px 0 #AAA; }
 		.btn-success { border-bottom-color: #9be359; }
 		.btn-success:hover{ box-shadow: inset 0 -50px 0 #9be359; }
+		.btn-warn { border-bottom-color: #EE9111; }
+		.btn-warn:hover{ box-shadow: inset 0 -50px 0 #EE9111; }
+		.btn-fail { border-bottom-color: #D1766B; }
+		.btn-fail:hover{ box-shadow: inset 0 -50px 0 #D1766B; }
 		
 		
 /* CLASSES FOR TEXT FIELDS */
 	[class*='txt-'] {
 		border: none;
-		border-bottom: 2px solid #DDD;
-		padding: 4px 10px;
+		border-bottom: 2px solid #AAA;
+		padding: 7px 10px;
+		color: #9A9A9A;
 		width: 200px;
-		transition: all 250ms linear;
-		-moz-transition: all 250ms linear;
-		-webkit-transition: all 250ms linear;
+				
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
+		
+		transition: all 250ms linear;
+		-moz-transition: all 250ms linear;
+		-webkit-transition: all 250ms linear;
 	} 
 	[class*='txt-']:focus {
-		box-shadow: inset 0 -30px 0 #DDD;
+		box-shadow: inset 0 -35px 0 #AAA;
+		color: #333;
 	}
 	
 	/* TEXT TYPES */
-		.txt-default { background: #FFF; }
+		.txt-default { background: #EEE; }
