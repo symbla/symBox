@@ -1,0 +1,43 @@
+/*
+ *
+ *	DROPDOWN DEFINITIONS
+ *
+ */
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background: #FFF;
+	border: 1px solid #E5E5E5;
+	
+	box-shadow: 0 0 5px #E5E5E5;
+	
+	border-radius: 0 5px 5px 5px;
+	-moz-border-radius: 0 5px 5px 5px;
+	-webkit-border-radius: 0 5px 5px 5px;
+}
+
+*:hover > .dropdown {
+	display: block;
+}
+
+.dropdown .dd-list-item {
+	list-style: none;
+	display: block;
+	min-width: 180px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #E5E5E5;
+	text-decoration: none;
+	
+	transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-webkit-transition: all 100ms linear;
+}
+
+.dropdown .dd-list-item:last-of-type {
+	border-bottom: none;
+}
+
+.dropdown .dd-list-item:hover {
+	background: #EEE;
+}
