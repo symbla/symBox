@@ -1,12 +1,12 @@
 /**
 *
-*	
+*	TYPOGRAPHY DEFINITION
 *
 **/
 
-body p, a, span, strong {
+body p, a, span, strong, ul, ol, li {
 	font-size: 13px;
-	line-height: 15px;
+	line-height: 18px;
 	color: #333;
 }
 
