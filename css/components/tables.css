@@ -1,18 +1,23 @@
 /**
 *
-* TABELLEN
+*	TABLE DEFINITION
 *
 **/
 
 table {
 	width: 100%;
 	border-spacing: 0;
-	border-collapse: separate;
+	border-collapse: collapse; 
 }
 
 table thead {
 	font-weight: bold;
 	padding: 5px 3px;
+	border-bottom: 1px solid #CCC;
+}
+
+table thead, table tr, table td {
+	padding: 0 3px !important;
 }
 
 	/* DATENTABELLE */
@@ -23,8 +28,19 @@ table thead {
 		padding: 0 3px !important;
 	}
 
-	.data-table thead { border-bottom: 1px solid #CCC; }
+	.data-table thead { border-bottom: 1px solid #CCC; background: #F5F5F5; }
 	.data-table tr { border-bottom: 1px solid #CCC; }
-	.data-table td { border-right: 1px solid #CCC; }
+	.data-table tr:last-of-type { border-bottom: none; }
+	.data-table tr:hover { background: #F5F5F5; }
+	.data-table td { 
+		border-right: 1px solid #CCC; 
+	}
+	.data-table td:hover { 
+		/*transform: scale(1.017);
+		-moz-transform: scale(1.017); 
+		-webkit-transform: scale(1.017);
+		box-shadow: 0 0 5px #AAA;*/
+		background: #DDD;
+	}
 	.data-table tr:last-of-type { border-bottom: none; }
 	.data-table td:last-of-type { border-right: none; }
