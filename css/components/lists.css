@@ -7,7 +7,7 @@
 .list {
 	width: 100%;
 	padding: 0;
-	border: 1px solid #E5E5E5;
+	border: none;
 	border-bottom: none;
 }
 
@@ -17,16 +17,40 @@ a.list-item {
 	background: #FFF;
 	color: #333;
 	padding: 5px;
-	border-bottom: 1px solid #E5E5E5;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
 	text-decoration: none;
+	
 	transition: all 150ms linear;
 	-moz-transition: all 150ms linear;
 	-webkit-transition: all 150ms linear;
 }
 
+	a.list-item:first-of-type {
+		border-radius: 5px 5px 0 0;
+		-moz-border-radius: 5px 5px 0 0;
+		-webkit-border-radius: 5px 5px 0 0;
+	}
+	
+	a.list-item:last-of-type {
+		border-bottom: 1px solid #E5E5E5;
+		
+		border-radius: 0 0 5px 5px;
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+	}
+
 a.list-item:hover {
-	padding: 10px;
-	box-shadow: inset 0 0 15px #E5E5E5;
+	border-color: #FFF;
+	padding: 10px 5px;
+	
+	box-shadow: 0 0 5px #AAA;
+	-moz-box-shadow: 0 0 5px #AAA;
+	-webkit-box-shadow: 0 0 5px #AAA;
+	
+	transform: scale(1.017);
+	-moz-transform: scale(1.017);
+	-webkit-transform: scale(1.017);
 }
 	
 	p.list-item-header {
