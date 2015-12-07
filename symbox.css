@@ -1,0 +1,47 @@
+/**
+ *
+ *	(c) 2015 symbla.org 
+ *	All rights reserved.
+ *
+**/
+
+/* IMPORT SYSTEM STYLES */
+	@import url("./css/sys/config.css");
+	@import url("./css/sys/colors.css");
+	@import url("./css/sys/fonts.css");
+
+/* IMPORT COMPONENTS */
+	@import url("./css/components/accordion.css");
+	@import url("./css/components/alerts.css");
+	@import url("./css/components/dropdown.css");
+	@import url("./css/components/forms.css");
+	@import url("./css/components/grid.css");
+	@import url("./css/components/lists.css");
+	@import url("./css/components/navbar.css");
+	@import url("./css/components/notifications.css");
+	@import url("./css/components/panels.css");
+	@import url("./css/components/parallax.css");
+	@import url("./css/components/tables.css");
+	@import url("./css/components/tabs.css");
+	@import url("./css/components/tooltips.css");
+	@import url("./css/components/typography.css");
+	@import url("./css/components/windows.css");
+
+/* SCALE OPTIONS */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* SET FONT-FAMILY */
+html, body, input, textarea {
+	font-family: "OPENSANS" !important;
+}
+
+html ul, body ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
