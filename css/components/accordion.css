@@ -1,0 +1,68 @@
+/**
+*
+*	ACCORDION DEFINITIONS
+*
+**/
+
+ul.accordion {
+	width: 100%;
+	padding: 0;
+}
+
+	a.accordion-item {
+		display: block;
+		width: 100%;
+		padding: 7px 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: #FFF;
+		margin-bottom: 3px;
+		
+		border-type: solid;
+		border-color: #AAA;
+		border-width: 1px 1px 0 1px;
+		
+		transition: all 100ms linear;
+		-webkit-transition: all 150ms linear;
+	}
+	
+	a.accordion-item:hover, li:target > a.accordion-item {
+		color: #333;
+		
+		transform: scale(1.017);
+		-webkit-transform: scale(1.017);
+		
+		box-shadow: 0 0 5px #AAA;
+	}
+	li:target > a.accordion-item { 
+		background: #E5E5E5; 
+		box-shadow: none;
+		transform: scale(1);
+	}
+	
+	a.accordion-item:first-of-type {
+		border-radius: 2px 2px 0 0;
+		-webkit-border-radius: 2px 2px 0 0;
+	}
+	a.accordion-item:last-of-type { 
+		margin: 0 !important;
+		
+		border-radius: 0 0 2px 2px;
+		-webkit-border-radius: 0 0 2px 2px; 
+	}
+	
+
+ul.accordion-content {
+	display: none;
+	background: #FFF;
+	padding: 10px;
+}
+
+ul.accordion ul.accordion-content:first-of-type {
+	display: block;
+}
+
+/* FUNCTIONALITY OF accordion-SWITCHER */
+li:target > ul.accordion-content {
+	display: block;
+}
