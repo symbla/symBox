@@ -3,41 +3,55 @@
  *	DROPDOWN DEFINITIONS
  *
  */
+ 
+ul.dd-menu > div.sym-grid { padding: 0; margin: 0; }
 
-.dropdown {
-	display: none;
+li.dd-launcher ul.dd-menu {
+	display: block;
 	position: absolute;
 	background: #FFF;
 	border: 1px solid #E5E5E5;
 	
 	box-shadow: 0 0 5px #E5E5E5;
+	-webkit-box-shadow: 0 0 5px #E5E5E5;
 	
 	border-radius: 0 5px 5px 5px;
-	-moz-border-radius: 0 5px 5px 5px;
 	-webkit-border-radius: 0 5px 5px 5px;
+	
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	
+	opacity: 0;
+	-webkit-opacity: 0;
+	
+	transition: opacity 100ms, transform 150ms linear;
+	-webkit-transition: opacity 100ms, transform 150ms linear;
 }
 
-*:hover > .dropdown {
+li.dd-launcher:hover > ul.dd-menu {
 	display: block;
+	
+	opacity: 1;
+	-webkit-opacity: 1;
+	
+	transform: translateY(5px);
+	-webkit-transform: translateY(5px);
 }
 
-.dropdown .dd-list-item {
+li.dd-list-item {
 	list-style: none;
 	display: block;
 	min-width: 180px;
-	padding: 5px 10px;
+	padding: 10px;
 	border-bottom: 1px solid #E5E5E5;
-	text-decoration: none;
-	
-	transition: all 100ms linear;
-	-moz-transition: all 100ms linear;
-	-webkit-transition: all 100ms linear;
 }
 
-.dropdown .dd-list-item:last-of-type {
+li.dd-list-item a { text-decoration: none; }
+
+li.dd-list-item:last-of-type {
 	border-bottom: none;
 }
 
-.dropdown .dd-list-item:hover {
+li.dd-list-item:hover {
 	background: #EEE;
 }
