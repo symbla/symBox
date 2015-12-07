@@ -1,60 +1,66 @@
 /**
 *
-*	TAB DEFINITION
+*	TAB DEFINITIONS
 *
 **/
 
-.tab-box {
+ul.tab-box {
 	width: 100%;
 	padding: 0;
 }
 
-.tab-item {
-	display: inline;
-	padding: 7px 10px;
-	border: none;
-	border-top: 1px solid #EEE;
-	background: #FFF;
-	text-decoration: none;
-	color: #8A8A8A;
-	text-transform: uppercase;
-	
-	transition: all 150ms linear;
-	-moz-transition: all 150ms linear;
-	-webkit-transition: all 150ms linear;
-}
-@media all and (max-width: 750px) {
-	a.tab-item { 
-		width: 100% !important;
-		padding-right: 0;
-		display: block;
-		border-radius: 0;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
+	a.tab-item {
+		display: inline;
+		padding: 7px 10px;
+		text-decoration: none;
+		color: #8A8A8A;
+		text-transform: uppercase;
+		margin-right: 5px;
+		
+		border-type: solid;
+		border-color: #AAA;
+		border-width: 1px 1px 0 1px;
+		
+		border-radius: 2px 2px 0 0;
+		-webkit-border-radius: 2px 2px 0 0;
+		
+		box-shadow: inset 0 0 0 #AAA;
+		-webkit-box-shadow: inset 0 0 0 #AAA;
+		
+		transition: all 100ms linear;
+		-webkit-transition: all 150ms linear;
 	}
-}
-
-.tab-item:hover {
-	color: #333;
+	@media all and (max-width: 750px) {
+		a.tab-item { 
+			width: 100% !important;
+			padding-right: 0;
+			display: block;
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		ul.tab-content {
+			border-top: 1px solid #AAA;
+			border-bottom: 1px solid #AAA;
+		}
+	}
 	
-	box-shadow: inset 0 -35px 0 #EEE;
-	-moz-box-shadow: inset 0 -35px 0 #EEE;
-	-webkit-box-shadow: inset 0 -35px 0 #EEE;
-}
+	a.tab-item:hover, li:target > a.tab-item {
+		color: #333;
+		
+		box-shadow: inset 0 -35px 0 #AAA;
+		-webkit-box-shadow: inset 0 -35px 0 #AAA;
+	}
+	
+	a.tab-item:last-of-type { margin: 0 !important; }
+	
 
-.tab-content {
+ul.tab-content {
+	display: none;
 	background: #FFF;
-	border-top: 1px solid #EEE;
+	border-top: 1px solid #AAA;
 	padding: 10px;
-	
-	border-radius: 0 2px 2px 2px;
-	-moz-border-radius: 0 2px 2px 2px;
-	-webkit-border-radius: 0 2px 2px 2px;
-	
-	transform: translateY(6px);
-	-moz-transform: translateY(6px);
-	-webkit-transform: translateY(6px);
 }
 
-.tab-content:first-of-type, .tab-content:target { display: block; }
-.tab-content:not(:target) { display: none !important; }
+/* FUNCTIONALITY OF TAB-SWITCHER */
+li:target > ul.tab-content { display: block; }
