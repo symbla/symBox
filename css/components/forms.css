@@ -11,20 +11,15 @@
 	[class*='btn-'] {
 		cursor: pointer;
 		border: none;
-		border-bottom-width: 2px;
-		border-bottom-style: solid;
 		color: #9A9A9A;
-		padding: 7px 10px;
+		padding: 7px 10px 8px 10px;
 		text-align: center;
-		text-transform: uppercase;
 		
 		border-radius: 2px;
 		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
 		
-		transition: all 300ms linear;
-		-moz-transition: all 300ms linear;
-		-webkit-transition: all 300ms linear;
+		transition: all 100ms linear;
+		-webkit-transition: all 100ms linear;
 	}
 	[class*='btn-']:hover {
 		color: #333;
@@ -34,36 +29,34 @@
 	}
 	
 	/* BUTTON TYPES */
-		.btn-ok { border-bottom-color: #3EB7FF; }
+		.btn-ok { box-shadow: inset 0 -3px #3EB7FF; }
 		.btn-ok:hover { box-shadow: inset 0 -40px 0 #3EB7FF; }
-		.btn-default { border-bottom-color: #AAA; }
+		.btn-default { box-shadow: inset 0 -3px #AAA; }
 		.btn-default:hover { box-shadow: inset 0 -50px 0 #AAA; }
-		.btn-success { border-bottom-color: #9be359; }
+		.btn-success { box-shadow: inset 0 -3px #9be359; }
 		.btn-success:hover{ box-shadow: inset 0 -50px 0 #9be359; }
-		.btn-warn { border-bottom-color: #EE9111; }
+		.btn-warn { box-shadow: inset 0 -3px #EE9111; }
 		.btn-warn:hover{ box-shadow: inset 0 -50px 0 #EE9111; }
-		.btn-fail { border-bottom-color: #D1766B; }
+		.btn-fail { box-shadow: inset 0 -3px #D1766B; }
 		.btn-fail:hover{ box-shadow: inset 0 -50px 0 #D1766B; }
 		
 		
 /* CLASSES FOR TEXT FIELDS */
 	[class*='txt-'] {
 		border: none;
-		border-bottom: 2px solid #AAA;
-		padding: 7px 10px;
+		padding: 7px 10px 8px 10px;
 		color: #9A9A9A;
 		width: 200px;
+		box-shadow: inset 0 -3px #AAA;
 				
 		border-radius: 2px;
-		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
 		
-		transition: all 250ms linear;
-		-moz-transition: all 250ms linear;
-		-webkit-transition: all 250ms linear;
+		transition: all 100ms linear;
+		-webkit-transition: all 100ms linear;
 	} 
 	[class*='txt-']:focus {
-		box-shadow: inset 0 -35px 0 #AAA;
+		box-shadow: inset 0 -40px 0 #AAA;
 		color: #333;
 	}
 	
