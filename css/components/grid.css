@@ -9,9 +9,8 @@
 **/
 
 	*, *:after, *:before {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 	}
 
 	.sym-grid { 
@@ -30,11 +29,10 @@
 	}
 	
 	/* GRID OPTIONS */
-		.no-pad { padding: 0 !important; }							/* TURN OFF PADDING 				*/
-		.divider-top { border-top: 1px solid #CCC; }				/* GET A DIVIDER ON TOP			*/
-		.divider-right { border-right: 1px solid #CCC; }			/*	................ RIGHT 		*/
-		.divider-bottom { border-bottom: 1px solid #CCC; }		/* ................ BOTTOM 	*/
-		.divider-left { border-left: 1px solid #CCC; }			/* ................ LEFT		*/
+		.divider-top { border-top: 1px solid #CCC; }
+		.divider-right { border-right: 1px solid #CCC; }
+		.divider-bottom { border-bottom: 1px solid #CCC; }
+		.divider-left { border-left: 1px solid #CCC; }
 	
 /**
 *	[GRID
