@@ -4,57 +4,86 @@
 *
 **/
 
-.list {
+/* LIST, SUBLIST DEFINITION */
+ul.list, ul.sublist {
 	width: 100%;
 	padding: 0;
 	border: none;
 	border-bottom: none;
 }
 
-a.list-item {
-	width: 100%;
-	display: block;
-	background: #FFF;
-	color: #333;
-	padding: 5px;
-	border: 1px solid #E5E5E5;
-	border-bottom: none;
-	text-decoration: none;
-	
-	transition: all 150ms linear;
-	-moz-transition: all 150ms linear;
-	-webkit-transition: all 150ms linear;
+ul.sublist {
+	margin-top: 10px;
 }
 
-	a.list-item:first-of-type {
-		border-radius: 5px 5px 0 0;
-		-moz-border-radius: 5px 5px 0 0;
-		-webkit-border-radius: 5px 5px 0 0;
-	}
-	
-	a.list-item:last-of-type {
-		border-bottom: 1px solid #E5E5E5;
-		
-		border-radius: 0 0 5px 5px;
-		-moz-border-radius: 0 0 5px 5px;
-		-webkit-border-radius: 0 0 5px 5px;
-	}
-
-a.list-item:hover {
-	border-color: #FFF;
-	padding: 10px 5px;
-	
-	box-shadow: 0 0 5px #AAA;
-	-moz-box-shadow: 0 0 5px #AAA;
-	-webkit-box-shadow: 0 0 5px #AAA;
-	
-	transform: scale(1.017);
-	-moz-transform: scale(1.017);
-	-webkit-transform: scale(1.017);
-}
-	
-	p.list-item-header {
-		font-size: 15px !important;
-		font-weight: bold;
+	/* LIST-ITEM DEFINITION */
+	li.list-item, li.sublist-item {
+		width: 100%;
 		display: block;
+		background: #FFF;
+		color: #333;
+		padding: 10px 5px;
+		border: 1px solid #E5E5E5;
+		border-bottom: none;
+		text-decoration: none;
 	}
+	
+	/* TRANSITION ONLY FOR LIST-ITEM */
+	li.list-item {
+		transition: all 100ms linear;
+		-webkit-transition: all 100ms linear;
+	}
+	
+	/* NO TEXT-DECORATION FOR LIST-ITEM AND SUBLIST-ITEM */
+	li.list-item a, li.sublist-item a {
+		text-decoration: none;
+	}
+	
+	/* IMPORTANT FOR SUBLIST-ITEM */
+	li.sublist-item {
+		padding: 5px !important;
+	}
+	
+		/* DEFINES FIRST LIST-ITEM */
+		li.list-item:first-of-type, li.sublist-item:first-of-type {
+			border-radius: 5px 5px 0 0;
+			-webkit-border-radius: 5px 5px 0 0;
+		}
+		
+		/* DEFINES LAST LIST-ITEM */
+		li.list-item:last-of-type, li.sublist-item:last-of-type {
+			border-bottom: 1px solid #E5E5E5;
+			
+			border-radius: 0 0 5px 5px;
+			-webkit-border-radius: 0 0 5px 5px;
+		}
+
+		/* DEFINES HOVER-EVENT ON LIST-ITEM */
+		li.list-item:hover {
+			border-color: #FFF;
+			
+			box-shadow: 0 0 5px #AAA;
+			-webkit-box-shadow: 0 0 5px #AAA;
+			
+			transform: scale(1.017);
+			-webkit-transform: scale(1.017);
+		}
+		
+		/* DEFINES HOVER-EVENT ON SUBLIST-ITEM */
+		.sublist-item:hover { 
+			background: #EEE;
+		}
+		
+		/* DEFINES HOVER-EVENT FOR OPENING SUBLIST */
+		li.list-item:hover > ul.sublist {
+			transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+	
+	
+		/* DEFINES LIST-ITEM-HEADER */
+		p.list-item-header {
+			font-size: 15px !important;
+			font-weight: bold;
+			display: block;
+		}
