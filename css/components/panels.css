@@ -31,8 +31,3 @@
 	width: auto;
 	padding: 10px 5px;
 }
-
-/* TEXT PROPERTIES */
-	.text-center { text-align: center; } 		/* TEXT CENTER 	*/
-	.text-right { text-align: right; }			/* TEXT RIGHT 		*/
-	.text-justify { text-align: justify; } 		/* TEXT JUSTIFY 	*/
