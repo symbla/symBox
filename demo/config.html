@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>symbla symBox demo page</title>
+		<link rel="stylesheet" type="text/css" href="../symbox.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<div class="sym-grid" id="colors">
+			<div class="col-1-1">
+				<h3>Einstellungen</h3>
+			</div>
+		</div>
+		<div class="sym-grid">
+			<div class="col-1-1">
+				<div class="panel no-shadow no-border no-pad">
+					<table class="data-table">
+						<thead>
+							<tr>
+								<td><p>Aussehen</p></td>
+								<td><p>CSS-Klasse</p></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-border</p></td>
+								<td><p>Entfernt den Rahmen um dieses Element (border: none).</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-shadow</p></td>
+								<td><p>Entfernt den Schatten dieses Elements (box-shadow & text-shadow).</p></td>
+							</tr>
+						</tbody>
+						
+						<thead>
+							<tr>
+								<td><p>Positionierung</p></td>
+								<td><p>CSS-Klasse</p></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.fullscreen</p></td>
+								<td><p>Ändert das "position-Property" dieses Elements zu "absolute" und setzt die Abstände zum oberen, rechten, unteren und linken Rand auf 0. <br />Das Element besitzt nun die gesamte Größe des Bildschirms.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.absolute</p></td>
+								<td><p>Ändert das "position-Property" zu "absolute".</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.relative</p></td>
+								<td><p>Ändert das "position-Property" zu "relative".</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.fixed</p></td>
+								<td><p>Ändert das "position-Property" zu "fixed".</p></td>
+							</tr>
+						</tbody>
+						
+						<thead>
+							<tr>
+								<td><p>Docking</p></td>
+								<td><p>CSS-Klasse</p></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.dock-top</p></td>
+								<td><p>Dockt ein Element am oberen Bildschirmrand an. <br />(Nur in verbindung mit Klasse <i>.absolute</i> oder <i>.fixed</i>)</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.dock-right</p></td>
+								<td><p>Dockt ein Element am rechten Bildschirmrand an. <br />(Nur in verbindung mit Klasse <i>.absolute</i> oder <i>.fixed</i>)</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.dock-left</p></td>
+								<td><p>Dockt ein Element am unteren Bildschirmrand an. <br />(Nur in verbindung mit Klasse <i>.absolute</i> oder <i>.fixed</i>)</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.dock-left</p></td>
+								<td><p>Dockt ein Element am linken Bildschirmrand an. <br />(Nur in verbindung mit Klasse <i>.absolute</i> oder <i>.fixed</i>)</p></td>
+							</tr>
+						</tbody>
+						
+						<thead>
+							<tr>
+								<td><p>Textausrichtung</p></td>
+								<td><p>CSS-Klasse</p></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-center</p></td>
+								<td><p>Text in diesem Element wird nach links ausgerichtet.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-justify</p></td>
+								<td><p>Text in diesem Element wird im Blocksatz ausgerichtet.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-right</p></td>
+								<td><p>Text in diesem Element wird nach rechts ausgerichtet.</p></td>
+							</tr>
+						</tbody>
+						
+						<thead>
+							<tr>
+								<td><p>Innere Abstände (Padding)</p></td>
+								<td><p>CSS-Klasse</p></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-pad</p></td>
+								<td><p>Die Padding-Eigenschaft für dieses Element wird entfernt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-pad-top</p></td>
+								<td><p>Die Padding-Top-Eigenschaft für dieses Element wird entfernt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-pad-right</p></td>
+								<td><p>Die Padding-Right-Eigenschaft für dieses Element wird entfernt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-pad-bottom</p></td>
+								<td><p>Die Padding-Bottom-Eigenschaft für dieses Element wird entfernt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.no-pad-left</p></td>
+								<td><p>Die Padding-Left-Eigenschaft für dieses Element wird entfernt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.pad-top</p></td>
+								<td><p>Der Abstand am oberen inneren Rand dieses Elements wird auf 10 Pixel gesetzt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-center</p></td>
+								<td><p>Der Abstand am rechten inneren Rand dieses Elements wird auf 10 Pixel gesetzt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-justify</p></td>
+								<td><p>Der Abstand am unteren inneren Rand dieses Elements wird auf 10 Pixel gesetzt.</p></td>
+							</tr>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td><p>.text-right</p></td>
+								<td><p>Der Abstand am linken inneren Rand dieses Elements wird auf 10 Pixel gesetzt.</p></td>
+							</tr>
+						</tbody>
+						
+						<thead>
+							<tr>
+								<td><p>Äußere Abstände (Margin)</p></td>
+								<td></td>
+								<td><p>Beschreibung</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bg-symlight"></td>
+								<td class="bg-symlight"></td>
+								<td><p>Die Einstellungen für die äußeren Abstände sind identisch mit den Klassen für innere Abstände. Es muss lediglich das <i>pad</i> durch <i>mar</i> ersetzt werden.</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

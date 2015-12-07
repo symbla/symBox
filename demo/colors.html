@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>symbla symBox demo page</title>
+		<link rel="stylesheet" type="text/css" href="../symbox.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<div class="sym-grid" id="colors">
+			<div class="col-1-1">
+				<h3>Farben</h3>
+			</div>
+		</div>
+		<div class="sym-grid">
+			<div class="col-1-1">
+				<div class="panel no-shadow no-border no-pad">
+					<table class="data-table">
+						<thead>
+							<tr>
+								<td><p>Name</p></td>
+								<td>
+									<p>bg-Klasse <b class="text-red">?</b></p>
+									<p class="tooltip">
+										Die bg-Klasse wird für Hintergründe verwendet
+										<i>(Siehe Spalte "Farbe")</i>
+									</p>
+								</td>
+								<td>
+									<p>text-Klasse <b class="text-red">?</b></p>
+									<p class="tooltip">
+										Die text-Klasse wird für Textfarben verwendet
+									</p>
+								</td>
+								<td>
+									<p>R,G,B-Werte <b class="text-red">?</b></p>
+									<p class="tooltip">
+										Mischwerte aus Rot, Grün und Blau
+									</p>
+								</td>
+								<td><p>Farbe</p></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><p>symblue</p></td>
+								<td><p>.bg-symblue</p></td>
+								<td><p>.text-symblue</p></td>
+								<td><p>0, 136, 255</p></td>
+								<td class="bg-symblue"></td>
+							</tr>
+							<tr>
+								<td><p>symdark</p></td>
+								<td><p>.bg-symdark</p></td>
+								<td><p>.text-symdark</p></td>
+								<td><p>51, 51, 51</p></td>
+								<td class="bg-symdark"></td>
+							</tr>
+							<tr>
+								<td><p>symlight</p></td>
+								<td><p>.bg-symlight</p></td>
+								<td><p>.text-symlight</p></td>
+								<td><p>229, 229, 229</p></td>
+								<td class="bg-symlight"></td>
+							</tr>
+							<tr>
+								<td><p>black</p></td>
+								<td><p>.bg-black</p></td>
+								<td><p>.text-black</p></td>
+								<td><p>0, 0, 0</p></td>
+								<td class="bg-black"></td>
+							</tr>
+							<tr>
+								<td><p>white</p></td>
+								<td><p>.bg-white</p></td>
+								<td><p>.text-white</p></td>
+								<td><p>255, 255, 255</p></td>
+								<td class="bg-white"></td>
+							</tr>
+							<tr>
+								<td><p>blue</p></td>
+								<td><p>.bg-blue</p></td>
+								<td><p>.text-blue</p></td>
+								<td><p>0, 0, 255</p></td>
+								<td class="bg-blue"></td>
+							</tr>
+							<tr>
+								<td><p>brown</p></td>
+								<td><p>.bg-brown</p></td>
+								<td><p>.text-brown</p></td>
+								<td><p>165, 42, 42</p></td>
+								<td class="bg-brown"></td>
+							</tr>
+							<tr>
+								<td><p>cyan</p></td>
+								<td><p>.bg-cyan</p></td>
+								<td><p>.text-cyan</p></td>
+								<td><p>0, 255, 255</p></td>
+								<td class="bg-cyan"></td>
+							</tr>
+							<tr>
+								<td><p>gold</p></td>
+								<td><p>.bg-gold</p></td>
+								<td><p>.text-gold</p></td>
+								<td><p>255, 215, 0</p></td>
+								<td class="bg-gold"></td>
+							</tr>
+							<tr>
+								<td><p>grey</p></td>
+								<td><p>.bg-grey</p></td>
+								<td><p>.text-grey</p></td>
+								<td><p>190, 190, 190</p></td>
+								<td class="bg-grey"></td>
+							</tr>
+							<tr>
+								<td><p>lightgrey</p></td>
+								<td><p>.bg-lightgrey</p></td>
+								<td><p>.text-lightgrey</p></td>
+								<td><p>211, 211, 211</p></td>
+								<td class="bg-lightgrey"></td>
+							</tr>
+							<tr>
+								<td><p>green</p></td>
+								<td><p>.bg-green</p></td>
+								<td><p>.text-green</p></td>
+								<td><p>0, 128, 0</p></td>
+								<td class="bg-green"></td>
+							</tr>
+							<tr>
+								<td><p>navy</p></td>
+								<td><p>.bg-navy</p></td>
+								<td><p>.text-navy</p></td>
+								<td><p>0, 0, 128</p></td>
+								<td class="bg-navy"></td>
+							</tr>
+							<tr>
+								<td><p>orange</p></td>
+								<td><p>.bg-orange</p></td>
+								<td><p>.text-orange</p></td>
+								<td><p>255, 165, 0</p></td>
+								<td class="bg-orange"></td>
+							</tr>
+							<tr>
+								<td><p>pink</p></td>
+								<td><p>.bg-pink</p></td>
+								<td><p>.text-pink</p></td>
+								<td><p>255, 192, 203</p></td>
+								<td class="bg-pink"></td>
+							</tr>
+							<tr>
+								<td><p>purple</p></td>
+								<td><p>.bg-purple</p></td>
+								<td><p>.text-purple</p></td>
+								<td><p>160, 32, 240</p></td>
+								<td class="bg-purple"></td>
+							</tr>
+							<tr>
+								<td><p>red</p></td>
+								<td><p>.bg-red</p></td>
+								<td><p>.text-red</p></td>
+								<td><p>255, 0, 0</p></td>
+								<td class="bg-red"></td>
+							</tr>
+							<tr>
+								<td><p>silver</p></td>
+								<td><p>.bg-silver</p></td>
+								<td><p>.text-silver</p></td>
+								<td><p>230, 232, 250</p></td>
+								<td class="bg-silver"></td>
+							</tr>
+							<tr>
+								<td><p>violet</p></td>
+								<td><p>.bg-violet</p></td>
+								<td><p>.text-violet</p></td>
+								<td><p>238,130, 238</p></td>
+								<td class="bg-violet"></td>
+							</tr>
+							<tr>
+								<td><p>yellow</p></td>
+								<td><p>.bg-yellow</p></td>
+								<td><p>.text-yellow</p></td>
+								<td><p>255, 255, 0</p></td>
+								<td class="bg-yellow"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

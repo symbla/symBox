@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>symbla symBox demo page</title>
+		<link rel="stylesheet" type="text/css" href="../symbox.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+			function changeDemoFrameSrc(DFSrc) {
+				$("#demoframe").fadeOut(200, function() {
+					$("#demoframe").load(DFSrc+".html", function() {
+						$("#demoframe").fadeIn();
+					});
+				});
+			}
+		</script>
+	</head>
+	<body onLoad="changeDemoFrameSrc('typo')">
+		<div class="sym-grid">
+			<div class="col-1-5">
+				<div class="panel no-border no-shadow">
+					<h1>symbla symBox</h1>
+					<h4>demo page</h4>
+				</div>
+				<div class="panel no-border no-shadow">
+					<ul class="list">
+						<li class="list-item">
+							<p class="list-item-header">Grundsystem</p>
+							<ul class="sublist">
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('typo')">Schrift und Fließtext</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('grid')">Panels und Gridsystem</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('colors')">Farben</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('config')">Einstellungen</a></li>
+							</ul>
+						</li>
+						<li class="list-item">
+							<p class="list-item-header">Komponenten</p>
+							<ul class="sublist">
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('accordion')">Accordion</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('notifications')">Benachrichtigungen</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('dropdowns')">Dropdown-Menüs</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('fields')">Felder und Buttons</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('popups')">Fenster</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('alerts')">Hinweise</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('lists')">Listen</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('navbars')">Menüleisten</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('tables')">Tabellen</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('tabs')">Tabs</a></li>
+								<li class="sublist-item"><a href="javascript:changeDemoFrameSrc('tooltips')">Tooltips</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="panel no-border no-shadow text-center">
+					<p>
+						<i>
+							&copy; 2015 <a href="http://symbla.org">symbla.org</a>
+							<br />
+							Alle Rechte vorbehalten.
+						</i>
+					</p>
+					<p>
+						<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					   	<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS ist valide!" />
+					   </a>
+					</p>
+				</div>
+			</div>
+			<div class="col-4-5 divider-left">
+				<div class="panel no-border no-shadow no-pad">
+					<div id="demoframe"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
