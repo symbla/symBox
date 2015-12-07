@@ -20,6 +20,10 @@ table thead, table tr, table td {
 	padding: 0 3px !important;
 }
 
+table tr:nth-child(2n) {
+	background: #F5F5F5;
+}
+
 	/* DATENTABELLE */
 
 	.data-table { border: 1px solid #CCC; }
@@ -28,19 +32,20 @@ table thead, table tr, table td {
 		padding: 0 3px !important;
 	}
 
-	.data-table thead { border-bottom: 1px solid #CCC; background: #F5F5F5; }
-	.data-table tr { border-bottom: 1px solid #CCC; }
+	.data-table thead { 
+		border-bottom: 1px solid #CCC; 
+		background: #E5E5E5; 
+	}
+	.data-table tr { 
+		border-bottom: 1px solid #CCC;
+		transition: all 50ms linear;
+		-webkit-transition: all 50ms linear; 
+	}
+	.data-table tr:hover { 
+		background: #F5F5F5;
+		box-shadow: 0 0 5px #AAA; 
+	}
 	.data-table tr:last-of-type { border-bottom: none; }
-	.data-table tr:hover { background: #F5F5F5; }
-	.data-table td { 
-		border-right: 1px solid #CCC; 
-	}
-	.data-table td:hover { 
-		/*transform: scale(1.017);
-		-moz-transform: scale(1.017); 
-		-webkit-transform: scale(1.017);
-		box-shadow: 0 0 5px #AAA;*/
-		background: #DDD;
-	}
+	.data-table td { border-right: 1px solid #CCC; }
 	.data-table tr:last-of-type { border-bottom: none; }
 	.data-table td:last-of-type { border-right: none; }
